@@ -1350,23 +1350,23 @@ body {
 }
 
 .item-inside-1 {
-  background-image: url("../img/project-1.jpg");
+  /* background-image: url("../img/project-1.jpg"); */
   background-position: 50% 100%;
-  background-size: 350%;
+  background-size: 100% 100%;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+
+@media (min-width: 1024px) {
   .item-inside-1 {
-    background-image: url("../img/project-1h.jpg");
-  }
-}
-@media (min-width: 40em) {
-  .item-inside-1 {
-    background-size: 150%;
+    background-size: 100% 100%;
   }
 }
 
-.post-inside-1 {
-  background-image: url("../img/post-1.jpg");
+@media (max-width: 1023px) {
+  .item-inside-1 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 #layout-grid:checked ~ .rk-portfolio,
